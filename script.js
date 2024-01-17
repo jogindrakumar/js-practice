@@ -25,18 +25,25 @@
 // img2.src = src1;
 
 // });
-var form = document.querySelector("form");
-var inputs = document.querySelectorAll("input");
 
+ var inputs = document.querySelectorAll("input[type=text]");
+
+var inpu1 = document.querySelector("#inpu1");
+var inpu2 = document.querySelector("#inpu2");
 var h4 = document.querySelector("h4");
-form.addEventListener("submit", function(ev){
-ev.preventDefault();
-for(var i=0; i<inputs.length; i++) {
-    if(inputs[i].value.trim() === ''){
-        h4.textContent = "some field are blank";
+var forms = document.querySelector("form");
+
+forms.addEventListener("submit", function(e) {
+
+   e.preventDefault();
+
+for(var i = 0; i < inputs.length; i++) { 
+
+    if(inputs[i].value.trim() === ""){
+        h4.textContent = "error, some fields are required";
         h4.style.color = "red";
         break;
     }
-  
-}
+ }
+
 });
