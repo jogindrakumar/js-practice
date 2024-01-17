@@ -25,4 +25,18 @@
 // img2.src = src1;
 
 // });
+var form = document.querySelector("form");
+var inputs = document.querySelectorAll("input");
 
+var h4 = document.querySelector("h4");
+form.addEventListener("submit", function(ev){
+ev.preventDefault();
+for(var i=0; i<inputs.length; i++) {
+    if(inputs[i].value.trim() === ''){
+        h4.textContent = "some field are blank";
+        h4.style.color = "red";
+        break;
+    }
+  
+}
+});
