@@ -26,24 +26,52 @@
 
 // });
 
- var inputs = document.querySelectorAll("input[type=text]");
+//  var inputs = document.querySelectorAll("input[type=text]");
 
-var inpu1 = document.querySelector("#inpu1");
-var inpu2 = document.querySelector("#inpu2");
-var h4 = document.querySelector("h4");
-var forms = document.querySelector("form");
+// var inpu1 = document.querySelector("#inpu1");
+// var inpu2 = document.querySelector("#inpu2");
+// var h4 = document.querySelector("h4");
+// var forms = document.querySelector("form");
 
-forms.addEventListener("submit", function(e) {
+// forms.addEventListener("submit", function(e) {
 
-   e.preventDefault();
+//    e.preventDefault();
 
-for(var i = 0; i < inputs.length; i++) { 
+// for(var i = 0; i < inputs.length; i++) { 
 
-    if(inputs[i].value.trim() === ""){
-        h4.textContent = "error, some fields are required";
-        h4.style.color = "red";
-        break;
-    }
- }
+//     if(inputs[i].value.trim() === ""){
+//         h4.textContent = "error, some fields are required";
+//         h4.style.color = "red";
+//         break;
+//     }
+//  }
 
+// });
+
+var add = document.querySelector("#add");
+var remove = document.querySelector("#remove");
+var inpu = document.querySelector("#inpu");
+var ul = document.querySelector("ul");
+var li;
+
+
+add.addEventListener("click", function(e) {
+
+   if(inpu.value.trim()=="") {
+
+   }
+   else{
+        li = document.createElement("li");
+        li.textContent = inpu.value.trim();
+        ul.appendChild(li);
+        inpu.value = "";
+   }
 });
+
+remove.addEventListener("click", function(e) {
+
+  
+         ul.removeChild(li);
+       
+    
+ });
