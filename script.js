@@ -102,50 +102,43 @@
 // });
 
 
-//div hide content 
+//div hide content task 6
 
 
-var home = document.querySelector("#home");
-var about = document.querySelector("#about");
-var contact = document.querySelector("#contact");
+// var home = document.querySelector("#home");
+// var about = document.querySelector("#about");
+// var contact = document.querySelector("#contact");
 
-var hometext = document.querySelector("#hometext");
-var abouttext = document.querySelector("#abouttext");
-var contacttext = document.querySelector("#contacttext");
+// var hometext = document.querySelector("#hometext");
+// var abouttext = document.querySelector("#abouttext");
+// var contacttext = document.querySelector("#contacttext");
 
-home.addEventListener("click", function() {
-   saretexthtao();
-   hometext.style.color = "red";
-   hometext.style.display = "block";
+// home.addEventListener("click", function() {
+//    saretexthtao();
+//    hometext.style.color = "red";
+//    hometext.style.display = "block";
 
-   // abouttext.style.display = "none";
-   // contacttext.style.display = "none";
-});
 
-about.addEventListener("click", function() {
-   saretexthtao();
-   abouttext.style.color = "green";
-   abouttext.style.display = "block";
+// });
 
-   // hometext.style.display = "none";
-  
-   // contacttext.style.display = "none";
+// about.addEventListener("click", function() {
+//    saretexthtao();
+//    abouttext.style.color = "green";
+//    abouttext.style.display = "block";
+
+// });
+// contact.addEventListener("click", function() {
+//    saretexthtao();
+//    contacttext.style.color = "blue";
+//    contacttext.style.display = "block";
    
-});
-contact.addEventListener("click", function() {
-   saretexthtao();
-   contacttext.style.color = "blue";
-   contacttext.style.display = "block";
-   
-   // abouttext.style.display = "none";
 
-   // hometext.style.display = "none";
   
   
-});
+// });
 
-function saretexthtao(){
-   document.querySelectorAll("p").forEach(function(p){
-p.style.display = "none";
-   })
-}
+// function saretexthtao(){
+//    document.querySelectorAll("p").forEach(function(p){
+// p.style.display = "none";
+//    })
+// }
