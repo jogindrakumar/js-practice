@@ -143,7 +143,7 @@
 //    })
 // }
 
-//task = capsule
+//task6 = capsule
 var progress = document.querySelector("#progress");
 var h3 = document.querySelector("h3");
 
