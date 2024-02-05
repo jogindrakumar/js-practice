@@ -1,6 +1,6 @@
-let score = "33"
+//let score = "33"
 
-console.log(typeof score)
+//console.log(typeof score)
 
 
 // "33" =>
@@ -11,3 +11,9 @@ console.log(typeof score)
 // 1 => true ; 0 =>false
 //"" => false
 //"joginder" => true
+
+
+// *******************Operations *******************//
+
+//console.log(+true); //1
+//console.log(+""); // 0
